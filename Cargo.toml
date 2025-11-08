@@ -1,0 +1,7 @@
+# atcoder_rust/Cargo.toml
+
+[workspace]
+resolver = "3"
+members = [
+  "contests/*",
+]
