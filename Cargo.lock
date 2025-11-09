@@ -3,9 +3,9 @@
 version = 4
 
 [[package]]
-name = "practice_contest"
+name = "atcoder_beginners_selection"
 version = "0.1.0"
 
 [[package]]
-name = "atcoder_beginners_selection"
+name = "practice_contest"
 version = "0.1.0"
