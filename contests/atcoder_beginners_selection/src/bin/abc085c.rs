@@ -10,16 +10,14 @@ fn main() {
     let n = input.next().unwrap();
     let total_amount = input.next().unwrap();
 
-    for z in 0..=n {
-        for y in 0..=n {
-            for x in 0..=n {
-                if x + y + z == n && (10000 * x) + (5000 * y) + (1000 * z) == total_amount {
-                    println!("{x} {y} {z}");
-                    return;
-                }
+    for x in 0..=n {
+        for y in 0..=(n - x) {
+            let z = n - x - y;
+            if x * 10000 + y * 5000 + z * 1000 == total_amount {
+                println!("{x} {y} {z}");
+                return;
             }
         }
     }
-
     println!("-1 -1 -1");
 }
